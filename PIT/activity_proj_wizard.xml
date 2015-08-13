@@ -1,0 +1,221 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+<LinearLayout  android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    tools:context="com.yckim.project_manager.Activity.ProjWizardActivity"
+    android:background="@color/bg"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="프로젝트 마법사"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="50dp"
+        android:textSize="40dp"
+        android:textColor="@color/mint"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="기본 정보"
+        android:textColor="@color/green"
+
+        android:textSize="30dp"/>
+
+    <EditText
+        android:id="@+id/proj_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:hint="프로젝트 명"
+        android:textColorHint="@color/gray"/>
+    <EditText
+        android:id="@+id/briefy"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        android:backgroundTint="@color/purple"
+        android:hint="메모"
+        android:textColorHint="@color/gray"/>
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/category" />
+    <!---->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="일정"
+        android:textColor="@color/green"
+        android:textSize="30dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="날짜는 입력형식을 꼭 지켜주세요"
+        android:textColor="@color/purple"
+        android:textSize="10dp"/>
+    <LinearLayout
+
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="프로젝트 시작일"
+                android:textColor="@color/purple"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/startdate"
+                android:backgroundTint="@color/purple"
+                android:hint="YYYYMMDD"
+                android:textColorHint="@color/gray"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="프로젝트 마감일"
+                android:textColor="@color/purple"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/enddate"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:backgroundTint="@color/purple"
+                android:hint="YYYYMMDD"
+                android:textColorHint="@color/gray"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="수당"
+        android:textColor="@color/green"
+        android:textSize="30dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="10dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="날짜는 입력형식을 꼭 지켜주세요"
+        android:textColor="@color/purple"
+        android:textSize="10dp"
+        android:layout_gravity="right"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="받은돈"
+                android:textColor="@color/purple"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/purple"
+                android:id="@+id/startmoney"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:hint="YYYYMMDD"
+                android:textColorHint="@color/gray"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="받을돈"
+                android:textColor="@color/purple"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/purple"
+                android:id="@+id/endmoney"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:hint="YYYYMMDD"
+                android:textColorHint="@color/gray"/>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="받은 날짜"
+                android:textColor="@color/purple"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/startmoneydate"
+                android:backgroundTint="@color/purple"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:hint="YYYYMMDD"
+                android:textColorHint="@color/gray"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="받은 날짜"
+                android:textColor="@color/purple"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/purple"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:id="@+id/endmoneydate"
+                android:hint="YYYYMMDD"
+                android:textColorHint="@color/gray"/>
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/submit"
+        android:text="저장"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:background="@color/yellow"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+</ScrollView>
