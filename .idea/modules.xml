@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/androidAysncHttpMulitPartModifyLibrary/androidAysncHttpMulitPartModifyLibrary.iml" filepath="$PROJECT_DIR$/androidAysncHttpMulitPartModifyLibrary/androidAysncHttpMulitPartModifyLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gson-2.3.1/gson-2.3.1.iml" filepath="$PROJECT_DIR$/gson-2.3.1/gson-2.3.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/joda-time-2.3/joda-time-2.3.iml" filepath="$PROJECT_DIR$/joda-time-2.3/joda-time-2.3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/joda-time-2.3-javadoc/joda-time-2.3-javadoc.iml" filepath="$PROJECT_DIR$/joda-time-2.3-javadoc/joda-time-2.3-javadoc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/joda-time-2.3-sources/joda-time-2.3-sources.iml" filepath="$PROJECT_DIR$/joda-time-2.3-sources/joda-time-2.3-sources.iml" />
+      <module fileurl="file://$PROJECT_DIR$/project_manager.iml" filepath="$PROJECT_DIR$/project_manager.iml" />
+    </modules>
+  </component>
+</project>
+

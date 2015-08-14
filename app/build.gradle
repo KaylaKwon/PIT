@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.0"
+
+    defaultConfig {
+        applicationId "com.yckim.project_manager"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:22.0.0'
+    compile project(':joda-time-2.3-javadoc')
+    compile project(':joda-time-2.3-sources')
+    compile project(':joda-time-2.3')
+    compile project(':gson-2.3.1')
+    compile project(':androidAysncHttpMulitPartModifyLibrary')
+    compile files('/Users/chan/AndroidStudioProjects/project_manager/gson-2.3.1/gson-2.3.1.jar')
+    compile files('/Users/chan/AndroidStudioProjects/project_manager/joda-time-2.3/joda-time-2.3.jar')
+    compile files('/Users/chan/AndroidStudioProjects/project_manager/joda-time-2.3-javadoc/joda-time-2.3-javadoc.jar')
+    compile files('/Users/chan/AndroidStudioProjects/project_manager/joda-time-2.3-sources/joda-time-2.3-sources.jar')
+}
